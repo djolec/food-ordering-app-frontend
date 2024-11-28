@@ -9,7 +9,6 @@ import {
 import { Separator } from "./ui/separator";
 import { Button } from "./ui/button";
 import { useAuth0 } from "@auth0/auth0-react";
-import { spawn } from "child_process";
 import MobileNavLinks from "./MobileNavLinks";
 
 function MobileNav() {
