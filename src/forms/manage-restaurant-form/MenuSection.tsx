@@ -26,7 +26,7 @@ const MenuSection = () => {
         name="menuItems"
         render={() => (
           <FormItem className="flex flex-col gap-2">
-            {fields.map((field, index) => (
+            {fields.map((_, index) => (
               <MenuItemInput
                 key={index}
                 index={index}
