@@ -2,7 +2,7 @@ import { Form } from "@/components/ui/form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
 import { z } from "zod";
-import DetailtsSection from "./DetailtsSection";
+import DetailsSection from "./DetailsSection";
 import { Separator } from "@/components/ui/separator";
 import CuisinesSection from "./CuisinesSection";
 import MenuSection from "./MenuSection";
@@ -66,6 +66,7 @@ const ManageRestaurantForm = ({ onSave, isLoading, restaurant }: Props) => {
   });
 
   useEffect(() => {
+    console.log(restaurant);
     if (!restaurant) return;
 
     const deliveryPriceFormatted = parseInt(
@@ -123,7 +124,7 @@ const ManageRestaurantForm = ({ onSave, isLoading, restaurant }: Props) => {
         onSubmit={form.handleSubmit(onSubmit)}
         className="space-y-8 bg-gray-50 p-10 rounded-lg"
       >
-        <DetailtsSection />
+        <DetailsSection />
         <Separator />
         <CuisinesSection />
         <Separator />

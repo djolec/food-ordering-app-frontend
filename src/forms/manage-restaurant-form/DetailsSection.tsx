@@ -9,7 +9,7 @@ import {
 import { Input } from "@/components/ui/input";
 import { useFormContext } from "react-hook-form";
 
-const DetailtsSection = () => {
+const DetailsSection = () => {
   const { control } = useFormContext();
 
   return (
@@ -96,4 +96,4 @@ const DetailtsSection = () => {
   );
 };
 
-export default DetailtsSection;
+export default DetailsSection;
