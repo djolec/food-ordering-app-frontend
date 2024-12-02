@@ -66,7 +66,6 @@ const ManageRestaurantForm = ({ onSave, isLoading, restaurant }: Props) => {
   });
 
   useEffect(() => {
-    console.log(restaurant);
     if (!restaurant) return;
 
     const deliveryPriceFormatted = parseInt(
