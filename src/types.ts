@@ -18,11 +18,20 @@ export type Restaurant = {
   user: string;
   restaurantName: string;
   city: string;
-  countr: string;
+  country: string;
   deliveryPrice: number;
   estimatedDeliveryTime: number;
   cuisines: string[];
   menuItems: MenuItem[];
   imageUrl: string;
   lastUpdated: string;
+};
+
+export type RestaurantSearchResponse = {
+  data: Restaurant[];
+  pagination: {
+    total: number;
+    page: number;
+    pages: number;
+  };
 };
