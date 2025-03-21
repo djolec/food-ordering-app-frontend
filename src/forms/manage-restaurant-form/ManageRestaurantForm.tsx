@@ -28,7 +28,7 @@ const formSchema = z
       invalid_type_error: "must be a valid number",
     }),
     estimatedDeliveryTime: z.coerce.number({
-      required_error: "estimated delivert time is required",
+      required_error: "estimated delivery time is required",
       invalid_type_error: "must be a valid number",
     }),
     cuisines: z.array(z.string()).nonempty({
