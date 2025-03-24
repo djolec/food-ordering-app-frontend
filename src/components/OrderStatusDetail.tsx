@@ -5,6 +5,7 @@ type Props = {
   order: Order;
 };
 const OrderStatusDetail = ({ order }: Props) => {
+  console.log(order);
   return (
     <div className="space-y-5">
       <div className="flex flex-col">
