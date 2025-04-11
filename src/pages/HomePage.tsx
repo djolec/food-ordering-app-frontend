@@ -21,7 +21,7 @@ const HomePage = () => {
 
         <span className="text-xl">Food is just a click away!</span>
         <SearchBar
-          placeholder="Search by City or Town"
+          placeholder="Search by city or town, e.g. London or Manchester"
           onSubmit={handleSearchSubmit}
         />
       </div>
